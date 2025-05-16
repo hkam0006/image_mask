@@ -1,4 +1,4 @@
-# 🏞️ Image Masking Tool
+# 🏞️ Image Masking Tool (Frontend)
 
 _The Image Masking Tool is a simple and efficient utility that allows users to generate pixel-accurate masks over specific regions of an image. It's designed to help with tasks like object segmentation, background removal, and custom overlays for both development and creative workflows. With support for custom colors, opacity levels, and format compatibility, this tool makes it easy to highlight or isolate objects in images with minimal effort.._
 
