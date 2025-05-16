@@ -4,6 +4,14 @@ _The Image Masking Tool is a simple and efficient utility that allows users to g
 
 ---
 
+## 📦 Prerequisites
+
+Before setting up the project, ensure you have the following installed on your system:
+
+- **npm (Node Package Manager)**: Required to run frontend.
+- **Git**: For cloning the repository and version control.
+
+
 ## 🚀 Setup Instructions
 
 Follow these steps to get the project up and running locally.
@@ -22,6 +30,8 @@ npm install
 # or
 yarn install
 ```
+
+If experiencing version conflicts of packages, try running `npm install` with the `--legacy-peer-deps` flag.
 
 ### 3. Configure Environment Variables
 
@@ -45,6 +55,7 @@ To run the project locally, you need to set up environment variables.
 This project leverages the following tools and technologies to deliver its functionality:
 
 - **React**: A JavaScript library for building user interfaces, used for creating the frontend of the application.
+- **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine.
 - **Next.js**: A React framework that provides server-side rendering and static site generation for improved performance and SEO.
 - **Tailwind CSS**: A utility-first CSS framework for styling the application with ease and consistency.
 
