@@ -54,6 +54,6 @@ These tools collectively ensure a seamless development experience and robust app
 
 The Image Masking Tool is deployed and accessible online for immediate use. Visit the live production site to explore its features and functionality:
 
-[**Image Masking Tool Live Site**](https://image-masking-tool.example.com)
+[**Image Masking Tool Live Site**](https://image-mask.vercel.app)
 
 Feel free to test the tool, provide feedback, or use it for your projects. The live site is regularly updated with the latest features and improvements.
