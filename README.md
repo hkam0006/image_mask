@@ -72,8 +72,6 @@ To test the application locally:
 2. Run the application using the setup instructions provided above.
 3. Use the tool to create masks on the test images and verify the output.
 
-Feel free to add your own images to the `/test_images` directory to test additional use cases or edge cases. This helps ensure the tool is robust and meets your specific requirements.
-
 ## ⚠️ Limitations 
 
 The Image Masking Tool relies on Google Gen AI for processing, which has limitations when handling large image files. As a result, the tool may not perform optimally or could fail to generate accurate masks for images with high resolutions or large file sizes. For best results, consider resizing or compressing large images before using the tool.
