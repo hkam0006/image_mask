@@ -26,12 +26,13 @@ export async function POST(request: NextRequest) {
     const formData = await request.formData();
     const {data} = await axios.post(`${process.env.BACKEND_URL}?object=${object}&red=${red}&green=${green}&blue=${blue}&alpha=${alpha}`, formData, {
       headers: {
-        "Content-Type": "multipart/form-data"
+      "Content-Type": "multipart/form-data",
+      "Authorization": `Bearer ${process.env.AUTH_TOKEN}`, // Replace with your token logic
       }
     })
 
     if (!data || !data.image || !data.mask) {
-      return NextResponse.json({ error: "Failed to process image" }, { status: 500 });
+      return NextResponse.json({ error: "Failed to process image" }, { status: 502 });
     }
     
     return NextResponse.json({
