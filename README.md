@@ -31,7 +31,7 @@ To run the project locally, you need to set up environment variables.
    ```bash
    cp .env.example .env
    ```
-2. Update the values in .env with your local configuration (e.g., API keys, database URLs).
+2. Update the values in .env with your local configuration.
 
     The .env.example file includes all required variables to run this project locally.
     | Variable          | Description                                                                        |

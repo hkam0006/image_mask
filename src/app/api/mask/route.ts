@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
     //   })
     // console.log(formData)
     const formData = await request.formData();
-    const {data} = await axios.post(`${process.env.BACKEND_URL}?object=${object}&red=${red}&green=${green}&blue=${blue}&alpha=${alpha}`, formData, {
+    const {data} = await axios.post(`${process.env.BACKEND_URL}/detect_objects?object=${object}&red=${red}&green=${green}&blue=${blue}&alpha=${alpha}`, formData, {
       headers: {
       "Content-Type": "multipart/form-data",
       "Authorization": `Bearer ${process.env.AUTH_TOKEN}`, // Replace with your token logic
