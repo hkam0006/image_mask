@@ -14,20 +14,11 @@ export async function POST(request: NextRequest) {
   const alpha = request.nextUrl.searchParams.get("alpha")
   const object = request.nextUrl.searchParams.get("object")
   try {
-    // const formData = await request.formData();
-    // const {data} = await axios.post(`${process.env.NEXT_PUBLIC_URL}/api/mask?object=${prompt}&red=${r}&green=${g}&blue=${b}&alpha=${maskOpacity[0]}`, {
-    //     file: fileInputRef.current?.files?.[0],
-    //   }, {
-    //     headers: {
-    //       "Content-Type": "multipart/form-data",
-    //     },
-    //   })
-    // console.log(formData)
     const formData = await request.formData();
     const {data} = await axios.post(`${process.env.BACKEND_URL}/detect_objects?object=${object}&red=${red}&green=${green}&blue=${blue}&alpha=${alpha}`, formData, {
       headers: {
       "Content-Type": "multipart/form-data",
-      "Authorization": `Bearer ${process.env.AUTH_TOKEN}`, // Replace with your token logic
+      "Authorization": `Bearer ${process.env.AUTH_TOKEN}`,
       }
     })
 
